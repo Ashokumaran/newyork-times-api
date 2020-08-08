@@ -2,10 +2,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Varta:wght@600&family=Volkhov:wght@700&display=swap" rel="stylesheet"> 
     <title>New York Times</title>
 </head>
 <body>
-    
+    <div class="container-fluid">
+        <header>
+            <div class="header">
+                <div class="logo-align">
+                    <img src="logo.svg" class="logo mt-4 mb-1">
+                </div>
+                <div class="headline-align">
+                    <script> 
+                    document.write(new Date().toLocaleDateString()); 
+                    </script>
+                    <span>Today's Paper</span>
+                </div>
+            </div>
+        </header>
+                <ul class="nav nav-tabs nav-fill mt-2">   
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" onclick="getSection(1)" onclick="print(1)">World</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" onclick="getSection(2)">U.S.</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" onclick="getSection(3)">Politics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(4)">N.Y.</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(5)">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(6)">Opinion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(7)">Tech</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(8)">Science</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(9)">Health</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(10)">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(11)">Arts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(12)">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(13)">Style</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(14)">Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(15)">Travel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(16)">Magazine</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(17)">T Magazine</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(18)">Real Estate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(19)">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(20)">Automobiles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(21)">Insider</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(22)">Obituaries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(23)">Sunday Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(24)">Theater</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="getSection(25)">Upshot</a>
+                    </li>
+                  </ul>
+    </div>
+    <div id="displaySection">
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>

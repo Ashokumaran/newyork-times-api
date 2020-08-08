@@ -1,0 +1,63 @@
+.logo-align{
+    text-align: center;
+}
+.logo{
+    width: 600px;
+    height: 80px;
+}
+.headline-align{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.header{
+    border-bottom: 2px solid rgb(179, 179, 179);
+}
+.nav>li>a {
+    padding: 0 50px 0 0;
+    color: rgb(70, 70, 70);
+}
+.card-design{
+    height: 100%;
+    width: 100%;
+}
+.right-padding{
+    padding-right: 0px !important;
+}
+.top-padding{
+    padding-top: 5px !important;
+}
+#image{
+    width: 100% !important;
+    height: 100% !important;
+}
+.title{
+    font-family: 'Volkhov', serif;
+    font-size: 25px;
+    color: #292b2c;
+}
+.sectionTitle{
+    font-family: 'Varta', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #0275d8;
+}
+.byLine{
+    font-family: 'Varta', sans-serif;
+    font-weight: bold;
+    color: #292b2c;
+}
+@media only screen and (max-width: 768px) {
+    .logo{
+        width: 320px;
+        height: 60px;
+    }
+    .headline-align{
+        display: flex;
+        justify-content: space-between;
+        font-size: 11px;
+    }
+    .right-padding{
+        padding-left: 0px !important;
+    }
+  }
