@@ -11,17 +11,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>New York Times</title>
 </head>
-<body>
+<body onload="getSection(1)">
     <div class="container-fluid custom-container">
         <header>
             <div class="header">
                 <div class="logo-align">
                     <img src="logo.svg" class="logo mt-4 mb-1">
                 </div>
-                <div class="headline-align">
+                <div class="headline-align"><strong>
                     <script> 
-                    document.write(new Date().toLocaleDateString()); 
-                    </script>
+                        let months = ["Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+                        let days = ["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday", "Saturday"];
+                    let date = new Date();
+                    let day = date.getDay();
+                    let mon = date.getMonth();
+                    let dateToday = date.getDate();
+                    let year = date.getFullYear();
+                    let print = days[day] + "&nbsp;&nbsp;" + months[mon]+ " " + dateToday + ", " +
+                    year;
+                    document.write(print); 
+                    </script></strong>
                     <span>Today's Paper</span>
                 </div>
             </div>
@@ -36,7 +45,7 @@
                       <a class="nav-link" href="#" onclick="getSection(1)" >World</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#" onclick="getSection(2)">U.S.</a>
+                      <a class="nav-link" href="#" onclick="getSection(2)">Arts</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#" onclick="getSection(3)">Politics</a>
@@ -63,7 +72,7 @@
                         <a class="nav-link" href="#" onclick="getSection(10)">Sports</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="getSection(11)">Arts</a>
+                        <a class="nav-link" href="#" onclick="getSection(11)">U.S.</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" onclick="getSection(12)">Books</a>

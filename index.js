@@ -2,7 +2,7 @@ var data = document.getElementById('displaySection');
 async function getSection(a){
     try{
         data.innerHTML = "";
-    let sectionArray = ["World","us","politics","nyregion","Business","Opinion","technology","Science","Health","Sports","Arts","Books","fashion","Food","Travel","Magazine","T-Magazine","Real Estate", "movies","automobiles","insider", "obituaries", "sundayreview", "theater",  "upshot"];
+    let sectionArray = ["World","arts","politics","nyregion","Business","Opinion","technology","Science","Health","Sports","us","Books","fashion","Food","Travel","Magazine","T-Magazine","Real Estate", "movies","automobiles","insider", "obituaries", "sundayreview", "theater",  "upshot"];
     let months = ["Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
     let sectionSelect = sectionArray[a-1];
     let myAPI = 'rbsfRyXqXYtw4IFEGjyIYygrgl1uGJ8y';
