@@ -1,6 +1,7 @@
 var data = document.getElementById('displaySection');
 async function getSection(a){
     try{
+        data.innerHTML = "";
     let sectionArray = ["World","us","politics","nyregion","Business","Opinion","technology","Science","Health","Sports","Arts","Books","fashion","Food","Travel","Magazine","T-Magazine","Real Estate", "movies","automobiles","insider", "obituaries", "sundayreview", "theater",  "upshot"];
     let months = ["Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
     let sectionSelect = sectionArray[a-1];
@@ -10,10 +11,11 @@ async function getSection(a){
     var input = await value.json();
     let row = document.createElement('div');
     row.className = 'row mt-3';
+    row.setAttribute("style","margin-right: 0px");
     for(var i=0; i<input.results.length; i++)
     {
         var col = document.createElement('div');
-        col.className = 'col col-12 mt-3 mr-3';
+        col.className = 'col col-12 mt-3 ml-2';
         let myDate = new Date(input.results[i].created_date);
         let createdMonth = months[myDate.getMonth()];
         let createdDate = myDate.getDate();
@@ -28,7 +30,7 @@ async function getSection(a){
             input.results[i].section = "New York";
         }
         printArea = `<div class = 'card container'>
-        <div class = 'row xs-column-reverse'>
+        <div class = 'row xs-column-reverse '>
         <div class = 'col-md-8 top-padding mb-3'>
         <p class = 'card-text'>
         <strong><span style="color:blue; text-transform: capitalize;">${input.results[i].section}</span></strong><br><br>
@@ -53,6 +55,6 @@ async function getSection(a){
     }
     }
     catch{
-        alert('Try loading the page once again');
+        console.log("")
     }
 }
