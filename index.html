@@ -3,8 +3,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Varta:wght@600&family=Volkhov:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Varta:wght@600&family=Volkhov:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>New York Times</title>
 </head>
 <body>
@@ -22,6 +26,11 @@
                 </div>
             </div>
         </header>
+        <nav class="navbar navbar-expand-md navbar-light nav-color">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="nav nav-tabs nav-fill mt-2">   
                     <li class="nav-item">
                       <a class="nav-link" href="#" onclick="getSection(1)" >World</a>
@@ -99,6 +108,8 @@
                         <a class="nav-link" href="#" onclick="getSection(25)">Upshot</a>
                     </li>
                   </ul>
+                    </div>
+                </nav>
     </div>
     <div id="displaySection">
     </div>
