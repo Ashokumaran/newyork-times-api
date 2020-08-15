@@ -14,9 +14,21 @@
     border-bottom: 2px solid rgb(179, 179, 179);
 }
 .nav>li>a {
-    padding: 0 30px 0 0;
+    padding: 0 15px 0 15px;
     color: rgb(70, 70, 70);
 }
+.nav>li :active {
+    padding: 0 15px 0 15px;
+    background-color: #5cb85c ;
+    color: white;
+}
+.nav>li :hover {
+    padding: 0 15px 0 15px;
+    background-color: #0275d8 ;
+    color: white;
+}
+
+
 .card-design{
     height: 100%;
     width: 100%;
@@ -39,8 +51,11 @@
 .sectionTitle{
     font-family: 'Varta', sans-serif;
     font-weight: bold;
-    font-size: 20px;
-    color: #0275d8;
+    font-size: 12pt !important;
+}
+.badge-custom{
+ padding-top : 8px !important;
+ margin-top: 10px;
 }
 .byLine{
     font-family: 'Varta', sans-serif;
@@ -90,3 +105,5 @@
         padding: 0 20px 0 20px !important;
     }
   }
+
+ 

@@ -33,7 +33,7 @@ async function getSection(a){
         <div class = 'row xs-column-reverse '>
         <div class = 'col-md-8 top-padding mb-3'>
         <p class = 'card-text'>
-        <strong><span style="color:blue; text-transform: capitalize;">${input.results[i].section}</span></strong><br><br>
+        <strong><span class="badge badge-primary sectionTitle badge-custom" style="text-transform: capitalize;">${input.results[i].section}</span></strong><br><br>
         <span class="title">${input.results[i].title}</span>
         <div class="d-flex justify-content-between">
         <span style="color : gray"><b>${createdPeriod}</b></span><br><br>
